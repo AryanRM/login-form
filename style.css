@@ -1,0 +1,180 @@
+html {
+  overflow: hidden;
+}
+/* BACKGROUND-IMAGE */
+body {
+  background: fixed center repeat url(./loginpage-background.jpg);
+  font-family: "Gadugi", sans-serif;
+}
+/* MAIN-BOX STYLE */
+body div.box {
+  width: 45rem;
+  place-items: center;
+  margin: 180px auto;
+  padding: 3rem;
+  background: white;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 72px;
+}
+/* LOGIN STYLE */
+body div.box div.input h1 {
+  font-size: 72px;
+  margin: 0px auto;
+}
+/* USERNAME & PASSWORD INPUT STYLE */
+body div.box div.input .value {
+  display: block;
+  margin: 2rem auto;
+  width: 350px;
+  height: 40px;
+  background: #F0F0F0;
+  border: 1px #dfdfdf;
+  border-radius: 35px;
+  text-align: left;
+  font-family: "Corbel light", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 10px 25px;
+}
+body div.box div.input .value:hover {
+  background: #e9e6e6;
+}
+body div.box div.input .value:required:invalid {
+  border: 2px solid rgba(255, 24, 24, 0.8549019608);
+}
+/* REMEMEBER-ME BUTTON & FORGOT-PASSWORD LINK  STYLE*/
+body div.box div.underinput {
+  position: absolute;
+  margin: 0;
+  display: flex;
+  font-family: "Corbel light", sans-serif;
+}
+/* REMEMBER-ME BUTTON STYLE */
+body div.box div.underinput .rememberme {
+  display: inline-block;
+  margin: 0 0 0 170px;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  background: #F0F0F0;
+  border-radius: 7px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+body div.box div.underinput .rememberme:hover {
+  background: #cecece;
+}
+body div.box div.underinput .rememberme:checked {
+  border: 1px solid #138b13;
+  background: url(./check-solid.svg) no-repeat center/15px #19B719;
+}
+/* REMEMBER-ME BUTTON'S LABEL */
+body div.box div.underinput label {
+  font-size: 17px;
+  display: inline-block;
+  margin: 2.5px 0 0 15px;
+  cursor: pointer;
+}
+/* FORGOT-PASSWORD STYLE */
+body div.box div.underinput .forgot {
+  margin-top: 1.8rem;
+  position: relative;
+  font-size: 17px;
+  text-decoration: none;
+  margin: 2.5px 0 0 65px;
+  color: #19B719;
+  letter-spacing: 1px;
+}
+body div.box div.underinput .forgot:hover {
+  color: #138b13;
+}
+/* SIGN-IN BUTTON STYLE */
+body div.box div.button button {
+  width: 375px;
+  height: 65px;
+  margin-top: 4rem;
+  border: 1px solid #138b13;
+  border-radius: 35px;
+  background: #19B719;
+  font-family: "Gadugi", sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+}
+body div.box div.button button:hover {
+  background: #138b13;
+  border: #117911;
+}
+
+/* RESPONSIVE */
+
+/* RESPONSIVE MAX-WIDTH:900PX */
+@media only  screen  and (max-width:900px) {
+  /* MAIN-BOX STYLE */
+  body div.box {
+    width: 35rem;
+  }
+  /* REMEMBER-ME BUTTON STYLE */
+  body div.box div.underinput .rememberme {
+  margin: 0 0 0 90px;
+}
+}
+
+/* RESPONSIVE MAX-WIDTH:680PX */
+@media only screen and (max-width:680px) {
+    /* MAIN-BOX STYLE */
+    body div.box {
+      width: 28rem;
+    }
+    /* REMEMBER-ME BUTTON STYLE */
+    body div.box div.underinput .rememberme {
+    margin: 0 0 0 35px;
+  }
+}
+
+/* RESPONSIVE MAX-WIDTH:560PX */
+@media only screen and (max-width:560px) {
+  /* MAIN-BOX STYLE */
+  body div.box {
+    width: 24rem;
+  }
+  /* USERNAME & PASSWORD INPUT STYLE */
+body div.box div.input .value {
+  width: 320px;
+}
+  /* REMEMBER-ME BUTTON STYLE */
+  body div.box div.underinput .rememberme {
+  margin: 0 0 01px;
+}
+}
+
+/* RESPONSIVE MAX-WIDTH:500PX */
+@media only screen and (max-width:500px) {
+  /* MAIN-BOX STYLE */
+  body div.box {
+    width: 18rem;
+    height: 30rem;
+  }
+  /* USERNAME & PASSWORD INPUT STYLE */
+body div.box div.input .value {
+  width: 220px;
+}
+  /* REMEMBER-ME BUTTON STYLE */
+  body div.box div.underinput .rememberme {
+  margin: 0 0 0 -19px; 
+}
+/* FORGOT-PASSWORD STYLE */
+body div.box div.underinput .forgot {
+  margin: 2.5px 0 0 10px;
+}
+/* SIGN-IN BUTTON STYLE */
+body div.box div.button button {
+  width: 270px;
+  height: 65px;
+}
+}
